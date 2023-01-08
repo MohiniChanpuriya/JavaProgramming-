@@ -11,5 +11,17 @@ public class Typeconversion {
         // int num = sc.nextDouble();
         double num = sc.nextInt();
         System.out.println(num);
+
+        //Type Casting 
+        float a = 124.78f;
+        int b = (int)a;
+        System.out.println(b);
+
+        char ch = 'a';
+        char ch2= 'b';
+        int num1 = ch;
+        int num2 = ch2;
+        System.out.println(num1);
+        System.out.println(num2);
     }
 }
