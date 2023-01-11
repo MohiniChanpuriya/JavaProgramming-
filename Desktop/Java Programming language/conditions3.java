@@ -8,14 +8,20 @@ public class conditions3 {
 
         if(x == y){
             System.out.println("Equal");
+         }
+        // else {
+        //     if(x > y) {
+        //         System.out.println("x is Greater");
+        //     }
+        //     else {
+        //         System.out.println("x is Lesser");
+        //     }
+        // }
+        else if(x > y) {
+            System.out.println("x is Greater");
         }
         else {
-            if(x > y) {
-                System.out.println("x is Greater");
-            }
-            else {
-                System.out.println("x is Lesser");
-            }
+            System.out.println("x is Lesser");
         }
     }
 }
