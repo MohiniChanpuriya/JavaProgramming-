@@ -5,17 +5,39 @@ public class Practice2 {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
+        int operator = sc.nextInt();
 
-        int addition = a + b;         
-        int subtraction = a - b;        
-        int multiplication = a * b;
-        int division = a / b;
-        int modulo = a % b;
+        /*
+         * 1 -> +
+         * 2 -> -
+         * 3 -> *
+         * 4 -> /
+         * 5 -> %
+         */
 
-        System.out.println("Addition of numbers :"+ addition);
-        System.out.println("Subtaction of numbers :"+ subtraction);
-        System.out.println("Multiplication of numbers :"+ multiplication);
-        System.out.println("Division of numbers :"+ division);
-        System.out.println("Modulo of numbers :"+ modulo);
+         switch (operator) {
+            case 1 : System.out.println(a+b);
+            break;
+            case 2 : System.out.println(a-b);
+            break;
+            case 3 : System.out.println(a*b);
+            break;
+            
+            case 4 : if(b == 0){
+                System.out.println("Invailid Division");
+            } else {
+                System.out.println(a/b);
+            }
+            break;
+
+            case 5 : if(b == 0){
+                System.out.println("Invailid Division");
+            } else {
+                System.out.println(a%b);
+            }
+            break;
+
+            default : System.out.println("Invailid operator");
+         }
     }
 }
