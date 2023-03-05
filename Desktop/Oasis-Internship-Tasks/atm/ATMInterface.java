@@ -10,7 +10,7 @@ public class ATMInterface {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int pin=6969;
+        int pin=6060;
         System.out.println("Welcome.");
         Scanner sc=new Scanner(System.in);
         System.out.print("Please enter your pin:");
